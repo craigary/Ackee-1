@@ -1,0 +1,15 @@
+---
+application:
+  name: "ackee"
+  project: "Ackee"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "Ackee"
+  version: "4.4"
+routers:
+- name: "main-ackee"
+  routes:
+  - application_name: "ackee"
+    paths:
+    - "/*"
